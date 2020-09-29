@@ -33,7 +33,7 @@
     NSString *name = topLevelDictionary[@"name"];
     NSInteger identifier = [topLevelDictionary[@"id"] intValue];
     NSArray *abilitiesArray = topLevelDictionary[@"abilities"];
-    NSString *spritePath = topLevelDictionary[@"sprites"][@"font_default"];
+    NSString *spritePath = topLevelDictionary[@"sprites"][@"front_default"];
     
     if (![name isKindOfClass:[NSString class]] || ![abilitiesArray isKindOfClass:[NSArray class]])
     {
