@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C351F0952523920F007649CC /* DLDPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = C351F0942523920F007649CC /* DLDPokemon.m */; };
+		C351F09B2523A36A007649CC /* DLDPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = C351F09A2523A36A007649CC /* DLDPokemonController.m */; };
 		FBCB8F912461177F001D8C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCB8F902461177F001D8C7C /* AppDelegate.m */; };
 		FBCB8F942461177F001D8C7C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCB8F932461177F001D8C7C /* SceneDelegate.m */; };
 		FBCB8F9A2461177F001D8C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCB8F982461177F001D8C7C /* Main.storyboard */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C351F0932523920F007649CC /* DLDPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDPokemon.h; sourceTree = "<group>"; };
+		C351F0942523920F007649CC /* DLDPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDPokemon.m; sourceTree = "<group>"; };
+		C351F0992523A36A007649CC /* DLDPokemonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDPokemonController.h; sourceTree = "<group>"; };
+		C351F09A2523A36A007649CC /* DLDPokemonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDPokemonController.m; sourceTree = "<group>"; };
 		FBCB8F8C2461177F001D8C7C /* Pokedex-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokedex-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCB8F8F2461177F001D8C7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBCB8F902461177F001D8C7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C351F092252391DD007649CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C351F0932523920F007649CC /* DLDPokemon.h */,
+				C351F0942523920F007649CC /* DLDPokemon.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C351F0982523A345007649CC /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C351F0992523A36A007649CC /* DLDPokemonController.h */,
+				C351F09A2523A36A007649CC /* DLDPokemonController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		FBCB8F832461177F001D8C7C = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +82,10 @@
 		FBCB8F8E2461177F001D8C7C /* Pokedex-C */ = {
 			isa = PBXGroup;
 			children = (
-				FBCB8FAC24611EDD001D8C7C /* Model */,
-				FBCB8FAB24611ED3001D8C7C /* Model Controller */,
-				FBCB8FAA24611EC1001D8C7C /* View Controllers */,
-				FBCB8FA824611E55001D8C7C /* Resources */,
+				C351F0982523A345007649CC /* Model Controller */,
+				C351F092252391DD007649CC /* Model */,
 				FBCB8FA924611EAC001D8C7C /* Storyboards */,
+				FBCB8FA824611E55001D8C7C /* Resources */,
 			);
 			path = "Pokedex-C";
 			sourceTree = "<group>";
@@ -88,27 +111,6 @@
 				FBCB8F9D24611782001D8C7C /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		FBCB8FAA24611EC1001D8C7C /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		FBCB8FAB24611ED3001D8C7C /* Model Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controller";
-			sourceTree = "<group>";
-		};
-		FBCB8FAC24611EDD001D8C7C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +139,7 @@
 		FBCB8F842461177F001D8C7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DLD;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Karl Pfister";
 				TargetAttributes = {
@@ -181,6 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C351F0952523920F007649CC /* DLDPokemon.m in Sources */,
+				C351F09B2523A36A007649CC /* DLDPokemonController.m in Sources */,
 				FBCB8F912461177F001D8C7C /* AppDelegate.m in Sources */,
 				FBCB8FA224611782001D8C7C /* main.m in Sources */,
 				FBCB8F942461177F001D8C7C /* SceneDelegate.m in Sources */,
